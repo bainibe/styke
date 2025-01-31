@@ -1,0 +1,409 @@
+@font-face {
+    font-family: "Montserrat-VariableFont_wght";
+    src: url("../img/Montserrat-VariableFont_wght.ttf");
+    font-display: swap;
+}
+
+body {
+    background-color: #e8ecf2;
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    line-height: 1.6;
+}
+footer, footer a{
+    background-color: #272b2e;
+    color: #b7c9e0;
+}
+
+footer p{
+    margin: 0;
+}
+
+
+
+
+
+.mainTitleh2{
+    text-align: center;
+  font-weight: 700;
+  color: #435061;
+    font-size: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+.Main-Logo img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #666;
+}
+
+.home-slideshow-dots {
+    margin: -50px 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+
+}
+
+.home-slideshow-dots span {
+    display: inline-block;
+    text-align: center;
+    margin: 0 0.5em;
+}
+
+.slideCaptation {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    padding: 10vh;
+    background-color: #00000083;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.mySlides {
+    display: none;
+
+}
+
+.mySlides img {
+    vertical-align: middle;
+    width: 100%;
+
+    height: 49vh;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.sectionCitation {
+    background-color: #435060;
+    color: #ffffff;
+    padding: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10vh;
+}
+
+blockquote {
+    width: 60%;
+    margin: 30px auto;
+    font-family: "Montserrat-VariableFont_wght";
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 150%;
+    
+}
+
+.notre-mission {
+    display: table;
+    margin: 0 auto;
+    text-transform: capitalize;
+    background-color: rgb(145, 161, 180);
+    padding: 10px 25px;
+    border-radius: 2px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sectionCitation-action {
+    margin: 0 auto;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.sectionCitation-action a {
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    width: 30%;
+    border-radius: 2px;
+    transition: background-color 0.2s ease;
+}
+
+.sectionCitation-action a:hover {
+    background-color: #f7f7f7;
+}
+
+.nous-soutenire{
+    background-color: #29af8a;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+}
+
+.Devenire-Volontaire{
+    background-color: #fff;
+    color: rgb(145, 161, 180);
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+.nos-causes{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px; 
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.cause {
+    background-color: #fff;
+    width: 20%;
+    height: 370px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cause img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.cause span{
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.description{
+    width: 100%;
+    height:40%;
+    background-color: #29af8a;
+    color: #fff;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.section-NousRejoindre{
+    background-image: url("../img/01-4.jpg");
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-DevenireVolontaire{
+    background-color: #fff;
+    text-align: center;
+
+    opacity: 0.8;
+    width: 460px;
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.card-DevenireVolontaire h2
+{ text-align: center;}
+
+.Rejoinez-Nous-Maintenant{
+    display: block;
+    justify-content: center;
+    padding: 20px;
+    background-color: #29af8a;
+    margin: 30px auto;
+}
+.latestBlogs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    justify-content: center; }
+
+.blog{
+    width: 20%;
+    background-color: #fcfcfc;
+    padding: 20px;
+    box-shadow: 0px 16px 24px 2px rgba(0,0,0,0.14) , 0px 6px 30px 5px rgba(0,0,0,0.12) , 0px 8px 10px -7px rgba(0,0,0,0.2) ;
+}
+
+.blog img{
+    width: 100%;
+}
+
+.sectionSub{
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+height: 50vh;
+background-color: #29af8a;
+margin-top: 40px;
+
+}.groupSub{ width: 60%; }
+.sectionSub a{border: 1px solid; padding: 20px;  margin: 40px 0; color: #fff; text-decoration: none;}
+.sectionSub p, h3{ margin: 40px 0;}
+
+.sectionNewsletter{
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    padding: 10vh 0;
+
+    align-items: baseline;
+    background-color: #435061;
+    color: #fff;
+}
+.sectionNewsletter form{
+    display: flex;
+
+    gap: 10px;
+    height: 3rem;
+}
+
+.sectionNewsletter form input{
+    background-color: #ddd;
+    font-size:17px; 
+    padding: 23px; border-width: 0;
+
+}
+
+.newsletter-grouptext p, h4{margin: 0;}
+.groupSub_blasons{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+}
+.footer-group{
+    width: 60%;
+    display: flex;
+     justify-content: space-around;
+    justify-items: baseline;
+    margin: 0 auto;
+
+}
+
+.footer-group h3{
+text-align: justify;
+font-size: 20px;
+}
+
+.groupSub_blasons img{
+    height: 10vh;
+
+}
+
+.footer-group-right, .footer-group-left, .socials,.footer-group-right-end{
+    width: 20%;
+}
+.socials{
+    display: flex;
+    gap:20px;
+    padding: 4vh 0;
+}
+
+.socials svg{
+    height: 45px;
+    fill: #b7c9e0;
+}
+
+/*##*/
+section h1 ,h2, h3 {
+    text-align: center;
+}
+.Qsn{
+    background-color: red;
+    height: 23vh;
+    margin-bottom: 30vh;
+
+}
+.QsnCard{
+    background-color: #fff;
+    padding: 20px;
+    position: absolute;
+    top: 20rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+
+.Qsn2{
+    background-color: #319a85;
+ padding: 20px;  color: #fff;
+
+
+}
+.groupbureauCard{
+    display: flex;
+    flex-wrap: wrap;
+justify-content: center;
+    gap: 20px;
+}
+.bureauCard{
+    height: 50vh;
+    background: #666;
+    width: 20%;
+
+}
+
